@@ -45,8 +45,9 @@ IMG {
 .main-frame-nav {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding-left: 0px;
+    padding-right: 1em;
     flex-direction: row;
     align-items: center;
 }
@@ -70,6 +71,16 @@ IMG {
 .header-nav-links:focus {
     text-decoration: none;
     color: rgb(189, 69, 75);
+}
+
+.list-item-nav {
+    display: none;
+    align-items: flex-end;
+}
+
+.mobile {
+    display:flex;
+    font-size: xx-large;
 }
 
 
@@ -281,6 +292,11 @@ IMG {
 }
 
 @media (min-width:570px) {
+    .main-frame-nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     .project-frame {
         display: flex;
         flex-direction: row;
@@ -318,6 +334,16 @@ IMG {
         width: 100%;
     }
 
+    .list-item-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
 }
 
 
@@ -378,6 +404,7 @@ IMG {
     .card {
         max-width: 290px;
     }
+
 }
 
 @media (min-width: 1250px) {
@@ -403,6 +430,7 @@ IMG {
     .main-nav-header-list {
         gap: 2rem;
     }
+
 }
 
 
