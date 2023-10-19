@@ -25,10 +25,6 @@ header {
     height: 10vh;
 }
 
-IMG {
-    height: 250px;
-    width: auto;
-}
 
 /* HEADER */
 .main-frame-header {
@@ -128,168 +124,293 @@ IMG {
     margin-top: 10.5vh;
 }
 
-/* PROFILE */
-.main-frame-profile {
-    width: 100%;
-    height: auto;
+/* Main section CSS */
+
+.div-title {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1.5em;
 }
 
-.profile-frame {
-    display: flex;
+.project-container {
+    height: auto;
     width: 100%;
-    gap: 1.6em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 25px;
+}
+
+.intro-top {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    border: 2px solid black;
     height: auto;
-    flex-direction: column;
-}
-
-.image-frame {
-    width: 100%;
-    height: auto;
-}
-
-.profile-picture {
-    width: 100%;
-    height: auto;
-}
-
-.text-frame {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(186, 191, 209);
-    height: auto;
-    padding: 1.5em;
-    text-align: center;
-}
-
-.text-frame > h3 {
-    font-size: x-large;
-    font-weight: 350;
-    color: rgb(37, 59, 79)
-}
-
-.profile-info {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-}
-
-.frame-dwnld-btn {
-    display: flex;
-    justify-content: center;
     padding: 1em;
-    align-self: center;
+    background-color:whitesmoke;
 }
 
-.download-btn {
-    display: flex;
-    background-color:rgb(117, 121, 137);
-    border-radius: 5px;
-    padding: 15px;
+.highlights {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    border: 2px solid black;
     height: auto;
-    width: auto;
-    color: rgb(39, 34, 34);
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: uppercase;
+    padding: 1em;
+    background-color:white
 }
 
-.download-btn:hover {
-    background-color:rgb(72, 113, 150);
-}
-
-/* Project */
-
-.main-frame-project {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-}
-
-.project-frame-title {
-    padding-bottom: 5px;
-    font-size: 3.5em;
-    font-weight: 400;
-    color: rgb(232, 233, 237);
-}
-
-.project-frame {
-    display: flex;
-    flex-direction: column;
-}
-
-.project-cards {
-    display: flex;
-    gap: 10px;
-    width: 100%;
-    justify-content: space-between;
+.skills {
+    display: grid;
+    grid-row: 3 / 4;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    border: 2px solid black;
+    height: auto;
+    padding: 1em;
+    background-color:white;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: space-around;
 }
 
-.card {
-    width: 100%;
+.work-life-experience {
+    display: grid;
+    grid-row: 5 / auto;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    border: 2px solid black;
+    height: auto;
+    padding: 1em;
+    background-color:blanchedalmond;
+}
+
+.education-background {
+    display: grid;
+    grid-row: 6 / auto;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    border: 2px solid black;
+    height: auto;
+    padding: 1em;
+    background-color: antiquewhite;
+} 
+
+.school-1 {
+    display: grid;
+    grid-row: 7 / auto;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border: 2px solid black;
+    height: auto;
+    padding: 1em;
+    margin-left: 0px;
+    background-color: antiquewhite;
+}
+
+.school-2 {
+    display: grid;
+    grid-row: 7 / auto;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    border: 2px solid black;
+    height: auto;
+    padding: 1em;
+    background-color: antiquewhite;
+} 
+
+/* Text styles */
+
+.slogan-text{
+color: brown;
+text-align: center;
+}
+
+.name-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: x-large;
+    padding: 0.5em;
+}
+
+.school-1, .school-2, .education-background, .work-life-experience > h2, h3 {
+    font-size: bold;
+    padding-bottom: 0.5em;
+}
+
+.highlights > h2 {
+    padding-bottom: 0.5em;
+}
+
+/* Skills styling */
+
+.skills > h2 {
+    padding-bottom: 0.5em;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    gap: 4px;
+}
+
+.btn-look-bd {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
     height: auto;
     text-align: center;
 }
 
-.card > h4 {
-    color: rgb(37, 59, 79);
-    font-size: 1.5em;
-    font-weight: 400;
-    padding: 20px;
-}
-
-.card > p {
-    padding: 1em;
-    font-weight: 300;
-}
-
-.project-picture {
-    width: 60%;
+.btn-look-am {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
     height: auto;
-    padding: 10px;
-    border-radius: 50%;
+    text-align: center;
 }
-
-.frame-project-btn {
-    display: flex;
-    justify-content: center;
-    padding: 1.5em;
-}
-
-.project-1, .project-3 {
-    background-color: rgb(186, 191, 209);
-}
-
-.project-2, .project-4 {
-    background-color: rgb(147, 154, 183);
-}
-
-.project-btn {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    background-color:rgb(117, 121, 137);
-    border-radius: 5px;
-    color: rgb(39, 34, 34);
-    padding: 15px;
+.btn-look-rm {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
     height: auto;
-    width: 50%;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
+    text-align: center;
+}
+.btn-look-pr {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    height: auto;
+    text-align: center;
 }
 
-.project-btn:hover {
-    background-color:rgb(72, 113, 150);
+.btn-look-neg {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    height: auto;
+    text-align: center;
 }
 
-/* FOOTER */
+.btn-look-crm {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    height: auto;
+    text-align: center;
+}
+
+.btn-look-bsm {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    height: auto;
+    text-align: center;
+}
+
+.btn-look-mplc {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    height: auto;
+    text-align: center;
+}
+
+.btn-look-iot {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    height: auto;
+    text-align: center;
+}
+
+.btn-look-sf {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    height: auto;
+    text-align: center;
+}
+
+.btn-look-ta {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    height: auto;
+    text-align: center;
+}
+
+.btn-look-sa {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    height: auto;
+    text-align: center;
+}
+
+.btn-look-tr {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    height: auto;
+    text-align: center;
+}
+
+.btn-look-sus {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    height: auto;
+    text-align: center;
+}
+
+/* FOOTER CSS */
 
 .footer-frame {
     width: 100%;
@@ -341,41 +462,10 @@ IMG {
         display: flex;
         justify-content: center;
     }
-    .project-frame {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .card {
-        width: 48%;
-        height: auto;
-        text-align: center;
-    }
-    .project-cards {
-        display: flex;
-        gap: 15px;
-        width: 100%;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
+
 
     main {
         margin: 1.5em 1em 2em;
-    }
-
-    .project-btn {
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        align-self: flex-end;
-        width: auto;
-    }
-    
-    .download-btn {
-        padding: 15px;
-        height: auto;
-        width: 100%;
     }
 
     .list-item-nav {
@@ -404,53 +494,34 @@ IMG {
         color: rgb(72, 113, 150);
         font-size: x-large;
     }
-    .profile-frame {
-        display: flex;
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-    }
 
-    .image-frame {
-        display: flex;
-        width: 100%;
-        height: auto;
-    }
-    
-    .profile-picture {
-        width: 100%;
-        height: auto;
-    }
-    
-    .text-frame {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .profile-info {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        height: 100%;
-    }
-
-    .download-btn {
-        padding: 15px;
-        height: auto;
-        width: 100%;
-    }
-
-    .card {
-        max-width: 48%;
-    }
+   
 }
 
-@media (min-width:780px) {
-    .card {
-        max-width: 290px;
+@media (max-width:953px) {
+    .school-2 {
+        display: grid;
+        grid-row: 8 / auto;
+        grid-column-start: 2;
+        grid-column-end: 7;
+        border: 2px solid black;
+        height: auto;
+        padding: 1em;
+        background-color: antiquewhite;
+    } 
+
+    .school-1 {
+        display: grid;
+        grid-row: 7 / auto;
+        grid-column-start: 2;
+        grid-column-end: 7;
+        border: 2px solid black;
+        height: auto;
+        padding: 1em;
+        margin-left: 0px;
+        background-color: antiquewhite;
     }
+
 
 }
 
